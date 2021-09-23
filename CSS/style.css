@@ -1,0 +1,193 @@
+body{
+    min-height: 100vh;
+}
+
+main{
+    min-height: 200%;
+}
+
+.logo{
+    background-color: black;
+    min-height: 80px;
+}
+
+.logo img{
+    float: left;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.material-icons{
+    padding: 20px;
+}    
+
+.menu{
+    float: right;
+    color: white;
+}
+.menu i{
+    font-size: 40px;
+}
+
+.frontimg{
+    justify-content: center;
+}
+
+.frontimg img{
+    max-width: 100%;
+    border-bottom: 4px solid black;
+}
+
+.søg{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.søg h1{
+    font-size: 20px;
+}
+
+#søg {
+    margin: 30px;
+    max-width: 180px;
+    padding: 15px;
+    font-size: 25px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#botton {
+    font-family: sans-serif; 
+    font-size: 20px; 
+    font-weight: bold;
+    background-color: black;
+    color: white; 
+    padding: 10px;
+    padding-left:50px;
+    padding-right:50px;   
+    border: 2px solid black;  
+}
+
+#søg1 {
+    margin-top: 10px;
+    max-width: 140px;
+    padding: 10px;
+    font-size: 15px; 
+    border: 2px solid black;
+}
+
+#botton1 {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 10px;    
+    border: 2px solid black;
+}
+
+
+#botton:hover{
+    background: rgb(58, 58, 58); 
+}
+
+.hintimg{
+    justify-content: center;
+}
+
+.hintimg img{
+    max-width: 100%;
+    border-bottom: 4px solid black;
+}
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    min-width: 150px;
+    min-height: 50px;
+} 
+.dropdown {
+    display: inline-block;
+    min-width: 100%;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: white;
+    min-width: 230px;
+    z-index: 1;
+    max-height: 100px;
+}
+  
+.dropdown a:hover {
+    background-color: #ddd;
+}
+  
+.show {
+    display: block;
+}
+
+body h2{
+    text-align: center;
+}
+
+body p{
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    padding: 1rem;
+    background-color: black;
+    text-align: center;
+    font-weight: 600;
+    height: 20%;
+}
+
+footer p{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 10px;
+}
+
+footer a:link{
+    text-decoration: none;
+}
+
+footer h1{
+    color: white;
+}
+
+footer img{
+    width: 80%;
+}
+#telefontext{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.telefon p{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.shop{
+    margin: 20px;
+}
+
+.shop a{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}

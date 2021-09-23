@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boulders</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="https://images.squarespace-cdn.com/content/v1/59147685ebbd1a46db5e4cfb/1534748049029-TVVOQ0TQFAN9ZDCAOADO/favicon.ico?format=100w"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.boulders.dk/"><img src="billeder/logo_BOULDERS-hvid-01.png" alt="Boulders logo" width="160" height="40"></a>
+            <div class="menu"><i class="material-icons">menu</i>
+            </div>
+        </div>
+        <div class="hintimg">
+            <img src="billeder/boulders_billede1.png" alt="klatrevæg">
+        </div>
+    </header>  
+    <main>
+        <div class="søg">
+            <br>
+            <br>
+            <br>
+            <h1>PROBLEM GUIDE</h1>
+            <input type="text" placeholder="Indtast nummer" id="søg1"><a href="boulder.HTML"><input type="submit" value="Søg" id="botton1"></a>
+        </div>
+        <br>
+        <br>
+        <p>Klik for at se hint.</p>
+        <br>
+        <div class="dropdown">
+            <button onclick="myFunction(1)" class="dropbtn">Hint 1</button>
+            <div id="myDropdown1" class="dropdown-content">
+              <br>
+                <p>Indset tip til hvordan dette "problem" kan løses og derved hjælpe brugeren med at klare problemet.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="dropdown" id="hint2">
+            <button onclick="myFunction(2)" class="dropbtn">Hint 2</button>
+            <div id="myDropdown2" class="dropdown-content">
+              <br>
+                <p>Indset tip til hvordan dette "problem" kan løses og derved hjælpe brugeren med at klare problemet.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="dropdown" id="hint3">
+            <button onclick="myFunction(3)" class="dropbtn">Hint 3</button>
+            <div id="myDropdown3" class="dropdown-content">
+              <br>
+                <p>Indset tip til hvordan dette "problem" kan løses og derved hjælpe brugeren med at klare problemet.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="dropdown" id="hint4">
+            <button onclick="myFunction(4)" class="dropbtn">Video</button>
+            <div id="myDropdown4" class="dropdown-content">
+                <br>
+                <br>
+              <iframe src="https://www.youtube.com/embed/p7-jcoqV7xA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            </div>
+        </div>
+        <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction(num) {
+      document.getElementById("myDropdown" + num).classList.toggle("show");
+    }
+        function filterFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          div = document.getElementById("myDropdown");
+          a = div.getElementsByTagName("a");
+          for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+            } else {
+              a[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+  </main>
+  <br>
+  <br>
+  <br>
+  <footer>
+        <a href="boulder.HTML"><p>Til toppen</p></a>
+        <br>
+    <div class="telefon">
+        <p id="telefontext">Telefon:</p><p>+45 72 10 00 19</p>
+    </div>
+    <div class="shop">
+        <p>Shop:<br><a href="https://shop.boulders.dk">shop.boulders.dk</p></a>
+    </div>
+    <img src="billeder/logo_BOULDERS-hvid-01.png" alt="boulders-logo">
+</footer>
+</body>
+</html>
